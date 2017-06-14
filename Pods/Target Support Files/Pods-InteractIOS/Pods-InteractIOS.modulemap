@@ -1,0 +1,6 @@
+framework module Pods_InteractIOS {
+  umbrella header "Pods-InteractIOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

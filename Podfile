@@ -11,6 +11,7 @@ target 'InteractIOS' do
   pod 'Firebase/Database'
   pod 'UITextView+Placeholder', '~> 1.2'
   pod 'IQKeyboardManager'
+  pod 'GONMarkupParser'
 
 
   target 'InteractIOSTests' do
@@ -20,6 +21,7 @@ target 'InteractIOS' do
    pod 'Firebase/Database'
    pod 'UITextView+Placeholder', '~> 1.2'
    pod 'IQKeyboardManager'
+   
 
   end
 
@@ -29,6 +31,7 @@ target 'InteractIOS' do
     pod 'Firebase/Database'
     pod 'UITextView+Placeholder', '~> 1.2'
     pod 'IQKeyboardManager'
+    
     # Pods for testing
   end
 

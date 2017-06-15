@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1846CFFC85F0F0E4C473F4A0 /* Pods_InteractIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD2F6A01D6EBCE51578A88E /* Pods_InteractIOSUITests.framework */; };
 		2B073FF11EF07DF700D85C07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B073FF01EF07DF700D85C07 /* AppDelegate.swift */; };
-		2B073FF31EF07DF700D85C07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B073FF21EF07DF700D85C07 /* ViewController.swift */; };
+		2B073FF31EF07DF700D85C07 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B073FF21EF07DF700D85C07 /* ChatViewController.swift */; };
 		2B073FF61EF07DF700D85C07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B073FF41EF07DF700D85C07 /* Main.storyboard */; };
 		2B073FF81EF07DF700D85C07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B073FF71EF07DF700D85C07 /* Assets.xcassets */; };
 		2B073FFB1EF07DF700D85C07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B073FF91EF07DF700D85C07 /* LaunchScreen.storyboard */; };
@@ -44,7 +44,7 @@
 		1AD5D3EFA03BC990833338E5 /* Pods-InteractIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InteractIOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InteractIOSTests/Pods-InteractIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2B073FED1EF07DF700D85C07 /* InteractIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InteractIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B073FF01EF07DF700D85C07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2B073FF21EF07DF700D85C07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2B073FF21EF07DF700D85C07 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		2B073FF51EF07DF700D85C07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B073FF71EF07DF700D85C07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B073FFA1EF07DF700D85C07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -130,7 +130,7 @@
 			children = (
 				2B073FF01EF07DF700D85C07 /* AppDelegate.swift */,
 				2B07401E1EF080C300D85C07 /* GoogleService-Info.plist */,
-				2B073FF21EF07DF700D85C07 /* ViewController.swift */,
+				2B073FF21EF07DF700D85C07 /* ChatViewController.swift */,
 				2B52EF1A1EF1B038007CD224 /* LogginViewController.swift */,
 				2B073FF41EF07DF700D85C07 /* Main.storyboard */,
 				2B073FF71EF07DF700D85C07 /* Assets.xcassets */,
@@ -248,7 +248,7 @@
 				TargetAttributes = {
 					2B073FEC1EF07DF700D85C07 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 3SVGASZ77W;
+						DevelopmentTeam = HW9ZGNVSF3;
 						ProvisioningStyle = Automatic;
 					};
 					2B0740001EF07DF700D85C07 = {
@@ -341,7 +341,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		46F3C035BB2256FF51855CEE /* [CP] Embed Pods Frameworks */ = {
@@ -371,7 +371,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		6096C84E5CB37424B5FE2FB8 /* [CP] Copy Pods Resources */ = {
@@ -431,7 +431,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		F467A152CAE2AD56FC6EFEE4 /* [CP] Copy Pods Resources */ = {
@@ -457,7 +457,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B52EF1B1EF1B038007CD224 /* LogginViewController.swift in Sources */,
-				2B073FF31EF07DF700D85C07 /* ViewController.swift in Sources */,
+				2B073FF31EF07DF700D85C07 /* ChatViewController.swift in Sources */,
 				2B073FF11EF07DF700D85C07 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -611,10 +611,11 @@
 			baseConfigurationReference = 2E9CA8124C97E050FB38CB9C /* Pods-InteractIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3SVGASZ77W;
+				DEVELOPMENT_TEAM = HW9ZGNVSF3;
 				INFOPLIST_FILE = InteractIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.epsonvirtus.InteractIOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.epsonvirtus.InteractIOSJere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -625,10 +626,11 @@
 			baseConfigurationReference = B5D82DCC474DAD1ADBE0C606 /* Pods-InteractIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3SVGASZ77W;
+				DEVELOPMENT_TEAM = HW9ZGNVSF3;
 				INFOPLIST_FILE = InteractIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.epsonvirtus.InteractIOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.epsonvirtus.InteractIOSJere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

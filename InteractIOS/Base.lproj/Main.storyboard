@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16G12b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zTy-IB-cu7">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,11 +18,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="52O-Vx-l90">
-                                <rect key="frame" x="17" y="146" width="218" height="30"/>
+                                <rect key="frame" x="44.5" y="146" width="218" height="30"/>
                                 <color key="backgroundColor" red="0.91996351522842645" green="0.91996351522842645" blue="0.91996351522842645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Qrh-ap-kUX"/>
@@ -32,7 +32,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b9D-ty-492">
-                                <rect key="frame" x="16" y="48" width="288" height="90"/>
+                                <rect key="frame" x="43.5" y="48" width="288" height="90"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="q1z-Az-RJn">
                                         <rect key="frame" x="1" y="1" width="286" height="88"/>
@@ -53,7 +53,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B6c-U6-ize">
-                                <rect key="frame" x="261" y="146" width="42" height="30"/>
+                                <rect key="frame" x="288.5" y="146" width="42" height="30"/>
                                 <state key="normal" title="enviar"/>
                                 <connections>
                                     <action selector="sendPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cki-0e-ZE0"/>
@@ -99,17 +99,17 @@
                         <viewControllerLayoutGuide type="bottom" id="iQE-Ys-27G"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="DP8-8m-Xdw">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interact Chat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyS-HY-hLh">
-                                <rect key="frame" x="102" y="60" width="116.5" height="23"/>
+                                <rect key="frame" x="129.5" y="60" width="116.5" height="23"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                 <color key="textColor" red="0.20285943150520325" green="0.24370330572128296" blue="0.27855357527732849" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="ofW-KZ-aYp">
-                                <rect key="frame" x="60" y="123" width="200" height="108"/>
+                                <rect key="frame" x="87.5" y="123" width="200" height="108"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f5a-n2-a2f">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>

@@ -26,6 +26,7 @@ class ChatViewController: UIViewController, UITextViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        UIApplication.shared.isStatusBarHidden = true
         initVariables()
         configureUI()
         observeChat()
@@ -59,6 +60,7 @@ class ChatViewController: UIViewController, UITextViewDelegate {
                     self.setUserColor(userName)
                     let message = room.value(forKeyPath: "message") as? String ?? ""
                     self.updateChatMessages(userName, message)
+                    print("ATUALIZANDO ATUALIZADAMENTE AGORA ESSA BAGA;AO CAS AS AS AS A SASASAS")
                     
                 }
             }
@@ -112,6 +114,7 @@ class ChatViewController: UIViewController, UITextViewDelegate {
     
     @IBAction func btnBackPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+        self.ref.removeAllObservers()
     }
     
     func getTime() -> String {

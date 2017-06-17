@@ -60,7 +60,6 @@ class ChatViewController: UIViewController, UITextViewDelegate {
                     self.setUserColor(userName)
                     let message = room.value(forKeyPath: "message") as? String ?? ""
                     self.updateChatMessages(userName, message)
-                    print("ATUALIZANDO ATUALIZADAMENTE AGORA ESSA BAGA;AO CAS AS AS AS A SASASAS")
                     
                 }
             }
